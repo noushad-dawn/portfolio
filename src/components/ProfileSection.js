@@ -18,7 +18,7 @@ const ProfileSection = () => {
   return (
     <div id='home' className="bg-white text-black min-h-screen flex flex-col md:flex-row justify-center items-center mt-10 pt-12 px-20 mx-7 font-sans">
       {/* Left Side: Profile Text */}
-      <div className="flex flex-col items-start max-w-4xl px-6 md:px-12 md:w-1/2">
+      <div className="flex flex-col mt-4 items-start max-w-4xl px-6 md:px-12 md:w-1/2">
         <h1
           className="text-4xl md:text-5xl mb-4 md:mb-6 font-light text-gray-800"
           data-aos="fade-up"
@@ -48,7 +48,7 @@ const ProfileSection = () => {
           <p className="text-base md:text-lg mb-3 md:mb-4 text-gray-600">
             🚀 Currently specializing in Frontend (React.js)
           </p>
-          <p className="text-base md:text-lg text-gray-600">⚡ MERN Stack Developer | Passionate about Web </p>
+          <p className="text-base md:text-lg text-gray-600">⚡ MERN Stack Developer | Passionate about Web</p>
 
         </div>
         <div
