@@ -4,7 +4,8 @@ import ProfileSection from "./components/ProfileSection";
 import Projects from "./components/Projects";
 import './App.css'
 import AboutMe from "./components/AboutMe";
-
+import ContactMe from "./components/ContactMe"
+import Footer from './components/Footer';
 
 import TechShowcase from "./components/TechTools";
 
@@ -16,7 +17,8 @@ function App() {
     <AboutMe/>
     <Projects/>
     <TechShowcase/>
-   
+    <ContactMe/>
+    <Footer/>
 
     </div>
   );

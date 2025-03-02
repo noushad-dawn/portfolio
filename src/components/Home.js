@@ -9,7 +9,7 @@ const Laptop = () => {
 
 const Home = () => {
   return (
-    <div className="flex flex-col md:flex-row items-start justify-between min-h-screen px-24 bg-white text-black pt-16">
+    <div className="flex flex-col md:flex-row items-start justify-between min-h-screen px-24  bg-white text-black pt-16">
       <section
         id="home"
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center w-full"

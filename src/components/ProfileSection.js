@@ -16,7 +16,7 @@ const ProfileSection = () => {
   }, []);
 
   return (
-    <div className="bg-white text-black min-h-screen flex flex-col md:flex-row justify-center items-center mt-10 pt-12 px-20 mx-7 font-sans">
+    <div id='home' className="bg-white text-black min-h-screen flex flex-col md:flex-row justify-center items-center mt-10 pt-12 px-20 mx-7 font-sans">
       {/* Left Side: Profile Text */}
       <div className="flex flex-col items-start max-w-4xl px-6 md:px-12 md:w-1/2">
         <h1
@@ -48,7 +48,8 @@ const ProfileSection = () => {
           <p className="text-base md:text-lg mb-3 md:mb-4 text-gray-600">
             🚀 Currently specializing in Frontend (React.js)
           </p>
-          <p className="text-base md:text-lg text-gray-600">⚡ Frontend Engineer at GGL</p>
+          <p className="text-base md:text-lg text-gray-600">⚡ MERN Stack Developer | Passionate about Web </p>
+
         </div>
         <div
           className="flex flex-row sm:flex-row gap-4 sm:gap-6 mt-8 md:mt-10"
@@ -89,7 +90,7 @@ const ProfileSection = () => {
         >
           <SwiperSlide>
             <img
-              src="./assets/p1.jpg"
+              src="./assets/p1.png"
               alt="Project 1"
               className="w-full h-full object-cover rounded-lg shadow-lg"
             />

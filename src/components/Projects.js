@@ -4,17 +4,20 @@ import "aos/dist/aos.css";
 
 const Projects = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 1000,
+      once: false, // Ensures animation runs every time
+      mirror: true,
+    });
   }, []);
 
   const projects = [
     {
       id: 1,
-      name: "Opiometer",
+      name: "College Updates",
       description:
-        "A web app to analyze whether an opinion on a specific topic is positive or negative based on recent tweets using Natural Language Processing concept called Sentiment Analysis.",
-      tags: ["React", "Python", "Chart.js"],
-      thumbnail: "./assets/p1.jpg", // Replace with actual image URL
+        "A social media platform designed for my college community to connect, share news, notes, and updates. Built with the MERN stack, it enables students and faculty to engage effortlessly. Integrated Cloudinary for secure and efficient image and video storage.",
+      tags: ["React js", "Node js", "Express js","MongoDB","Cloudinary","Tailwind css"],
+      thumbnail: "./assets/p1.png", // Replace with actual image URL
       link: "#",
     },
     {
@@ -38,10 +41,10 @@ const Projects = () => {
   ];
 
   return (
-    <section className="bg-white text-black py-12 lg:mx-12 lg:px-9 sm:px-6 lg:px-8">
+    <section id="projects" className="bg-white text-black py-12 lg:mx-12 lg:px-9 sm:px-6 lg:px-8">
       <div className="max-w-8xl lg:px-10  py-12">
         <section
-          id="projects"
+          
           className="min-h-screen bg-white text-black  mx-5"
           data-aos="fade-up"
         >
@@ -53,7 +56,7 @@ const Projects = () => {
           <div className="text-left px-4 mb-10">
             <a
               href="#"
-              className="text-green-400 text-lg font-medium hover:underline"
+              className="text-grey-400 text-lg font-medium hover:underline"
             >
               Explore more →
             </a>
@@ -96,7 +99,7 @@ const Projects = () => {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-green-400 text-sm font-medium hover:underline flex items-center"
+                    className="text-grey-400 text-sm font-medium hover:underline flex items-center"
                   >
                     View Repository
                     <svg

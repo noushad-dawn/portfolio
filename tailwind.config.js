@@ -8,6 +8,9 @@ module.exports = {
       animation: {
         "fade-in": "fadeIn 2s ease-in-out",
       },
+      maxWidth: {
+        '6.5xl': '76rem', // 1280px
+      },
       keyframes: {
         fadeIn: {
           "0%": { opacity: 0, transform: "translateY(10px)" },
