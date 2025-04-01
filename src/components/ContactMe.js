@@ -97,7 +97,7 @@ const ContactMe = () => {
 
           {/* WhatsApp Button */}
           <a
-            href="https://wa.me/your-whatsapp-number"
+            href="https://wa.me/+918889860310"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full max-w-xs bg-green-500 text-white py-3 px-4 rounded-lg mb-4 flex items-center justify-center hover:bg-green-600 transition-all"
@@ -119,7 +119,7 @@ const ContactMe = () => {
 
           {/* Email Button */}
           <a
-            href="mailto:your-email@example.com"
+            href="mailto:nk887640@gmail.com"
             className="w-full max-w-xs bg-gray-700 text-white py-3 px-4 rounded-lg flex items-center justify-center hover:bg-gray-600 transition-all"
           >
             <HiMail className="h-6 w-6 mr-2" />

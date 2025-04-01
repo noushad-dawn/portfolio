@@ -4,7 +4,8 @@ import "aos/dist/aos.css";
 
 const Projects = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000,
+    AOS.init({
+      duration: 1000,
       once: false, // Ensures animation runs every time
       mirror: true,
     });
@@ -16,35 +17,34 @@ const Projects = () => {
       name: "College Updates",
       description:
         "A social media platform designed for my college community to connect, share news, notes, and updates. Built with the MERN stack, it enables students and faculty to engage effortlessly. Integrated Cloudinary for secure and efficient image and video storage.",
-      tags: ["React js", "Node js", "Express js","MongoDB","Cloudinary","Tailwind css"],
+      tags: ["React js", "Node js", "Express js", "MongoDB", "Cloudinary", "Tailwind css"],
       thumbnail: "./assets/p1.png", // Replace with actual image URL
       link: "#",
     },
     {
-      id: 2,
-      name: "creative@home",
-      description:
-        "A website that provides a roadmap for various fields in programming and helps people learn to code for free.",
-      tags: ["Javascript", "Sass"],
-      thumbnail: "./assets/p2.jpg", // Replace with actual image URL
-      link: "#",
+      "id": 2,
+      "name": "CRM Web App",
+      "description": "A customer relationship management (CRM) web application built with the MERN stack. Designed for efficient order management, driver assignments, and customer interactions. Features include real-time updates, role-based access, and an intuitive UI. Tailwind CSS enhances the styling, while MongoDB ensures seamless data storage.",
+      "tags": ["React js", "Node js", "Express js", "MongoDB", "Tailwind css"],
+      "thumbnail": "./assets/p2.jpg", // Replace with actual image URL
+      "link": "#"
     },
     {
-      id: 3,
-      name: "Daily Prayer Time API",
-      description:
-        "A RESTful API that provides daily prayer times for various cities worldwide with data in JSON format.",
-      tags: ["Node.js", "Express", "API"],
-      thumbnail: "./assets/p3.jpg", // Replace with actual image URL
-      link: "#",
-    },
+      "id": 3,
+      "name": "Animal Rescue App",
+      "description": "A compassionate platform built with Flutter and Node.js to rescue and support stray animals. Users can report animals in need, find nearby shelters, and volunteer for rescues. The backend ensures smooth data processing, while the intuitive UI enhances user experience.",
+      "tags": ["Flutter", "Node.js", "Express.js", "MongoDB", "Firebase"],
+      "thumbnail": "./assets/p3.jpg", // Replace with actual image URL
+      "link": "#"
+    }
+    ,
   ];
 
   return (
     <section id="projects" className="bg-white text-black py-12 lg:mx-12 lg:px-9 sm:px-6 lg:px-8">
       <div className="max-w-8xl lg:px-10  py-12">
         <section
-          
+
           className="min-h-screen bg-white text-black  mx-5"
           data-aos="fade-up"
         >
@@ -67,9 +67,8 @@ const Projects = () => {
             {projects.map((project, index) => (
               <div
                 key={project.id}
-                className={`flex flex-col md:flex-row items-center ${
-                  index % 2 === 1 ? "md:flex-row-reverse" : ""
-                }`}
+                className={`flex flex-col md:flex-row items-center ${index % 2 === 1 ? "md:flex-row-reverse" : ""
+                  }`}
                 data-aos="fade-up"
               >
                 {/* Project Thumbnail */}
@@ -77,8 +76,9 @@ const Projects = () => {
                   <img
                     src={project.thumbnail}
                     alt={project.name}
-                    className="rounded-lg h-64 w-full object-cover"
+                    className="rounded-lg border border-black h-64 w-full object-cover"
                   />
+
                 </div>
 
                 {/* Project Details */}

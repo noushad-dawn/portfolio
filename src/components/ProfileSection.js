@@ -16,7 +16,7 @@ const ProfileSection = () => {
   }, []);
 
   return (
-    <div id='home' className="bg-white text-black min-h-screen flex flex-col md:flex-row justify-center items-center mt-10 pt-12 px-20 mx-7 font-sans">
+    <div id='home' className="bg-white text-black min-h-screen flex flex-col md:flex-row justify-center items-center mt-5 pt-12 px-20 mx-7 font-sans">
       {/* Left Side: Profile Text */}
       <div className="flex flex-col mt-4 items-start max-w-4xl px-6 md:px-12 md:w-1/2">
         <h1
@@ -57,7 +57,7 @@ const ProfileSection = () => {
           data-aos-delay="800"
         >
           <a
-            href="#"
+            href="https://github.com/noushad-dawn"
             className="flex items-center gap-2 text-gray-700 bg-gray-100 text-sm md:text-lg px-4 md:px-6 py-2 md:py-3 rounded shadow hover:bg-gray-200 transition"
           >
             <FaGithub className="text-lg md:text-xl" />
@@ -71,7 +71,7 @@ const ProfileSection = () => {
             LinkedIn
           </a>
           <a
-            href="mailto:"
+            href="mailto:nk88740@gmail.com"
             className="flex items-center gap-2 text-gray-700 bg-gray-100 text-sm md:text-lg px-4 md:px-6 py-2 md:py-3 rounded shadow hover:bg-gray-200 transition"
           >
             <FaEnvelope className="text-lg md:text-xl" />
